@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1>Contador Especial</h1>
+        <p><h4>Tempo desde que conheci você, Chai ❤️:</h4></p>
+        <div id="counter"></div>
+        <button class="button button-primary" onclick="goToPage2()">Clique aqui 😗</button>
+    </div>
+
+    <div class="container" id="page2" style="display: none;">
+        <h1>100 Dias de Amizade</h1>
+        <p><h4>100 dias de risadas, conversas com momentos tristes e felizes.</p>
+        <p>Quer renovar nosso contrato de amizade para 2025? 🧐</h4></p>
+        <div class="buttons-container">
+            <button class="button button-green" id="yesButton" onclick="goToPage3()">Sim 🥰</button>
+            <button class="button button-red" id="noButton" onclick="moveNoButton()">Não 🙄</button>
+        </div>
+    </div>
+
+    <div class="container" id="page3" style="display: none;">
+        <h1>Amizade Renovada</h1>
+        <p style="font-style: italic;"><h4>E assim, num clique, nosso laço se reafirmou,  
+           Uma amizade sincera(eu espero 🤨), de uma conversa que começou do nada.  
+           100 dias juntos(porem separados ☹️), celebrando essa amizade
+           com você, amiga. Obrigado por tudo 🥰!  
+           Gratidão por cada instante, cada sorriso,  
+           que nossa história continua, assim como em um livro.</h4>.</p>
+
+        <button class="button button-primary" id="toggleButton" onclick="toggleImage()">😻 + 🌹</button>
+        <img id="image" src="https://i.imgur.com/k37zpxa.jpeg" alt="Imagem especial de amizade">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
